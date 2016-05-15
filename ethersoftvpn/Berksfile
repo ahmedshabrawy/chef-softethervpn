@@ -5,3 +5,4 @@ metadata
 cookbook 'build-essential'
 cookbook 'apt'
 cookbook 'curl'
+cookbook 'iptables', '= 1.0.0'
