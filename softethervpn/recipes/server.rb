@@ -21,7 +21,7 @@ download_url = "https://github.com/ahmedshabrawy/chef-softethervpn/blob/master/s
 remote_file "#{Chef::Config[:file_cache_path]}/softether-vpnserver-v4.20-9608-rtm-2016.04.17-linux-x64-64bit.tar.gz" do
     source download_url
     mode "0755"
-    action :create_if_missing
+    action :create
 end
 
 directory install_directory do
