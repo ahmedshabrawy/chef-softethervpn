@@ -25,7 +25,7 @@ remote_file "#{Chef::Config[:file_cache_path]}/softether-vpnserver-v4.20-9608-rt
 end
 
 directory install_directory do
-    action :create_if_missing
+    action :create
 end
 
 execute "unpack_ethersoft_vpn" do
