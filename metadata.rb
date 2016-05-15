@@ -1,4 +1,4 @@
-name                'softethervpn'
+name                'ethersoftvpn'
 maintainer          'Charles Gardner'
 maintainer_email    'cgardner2020@gmail.com'
 license             'GPLv3'
