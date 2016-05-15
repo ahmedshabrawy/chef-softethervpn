@@ -2,7 +2,6 @@ source "https://supermarket.chef.io"
 
 metadata
 
-cookbook 'build-essential'
-cookbook 'apt'
+cookbook 'build-essential', '= 3.2.0'
+cookbook 'apt', '2.9.2'
 cookbook 'curl'
-cookbook 'iptables', '= 1.0.0'
