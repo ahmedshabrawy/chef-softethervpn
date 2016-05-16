@@ -2,7 +2,8 @@ source "https://supermarket.chef.io"
 
 metadata
 
+cookbook 'yum', '~> 3.10.0'
 cookbook 'build-essential', '= 3.2.0'
 cookbook 'apt', '2.9.2'
 cookbook 'curl'
-cookbook 'yum'
+
