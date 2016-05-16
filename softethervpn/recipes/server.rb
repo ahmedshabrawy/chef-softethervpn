@@ -16,7 +16,7 @@ include_recipe      'softethervpn::default'
 
 
 install_directory ="/usr/local/vpnserver"
-download_url = "https://github.com/ahmedshabrawy/chef-softethervpn/blob/master/softether-vpnserver-v4.20-9608-rtm-2016.04.17-linux-x64-64bit.tar"
+download_url = "https://github.com/ahmedshabrawy/chef-softethervpn/blob/master/softether-vpnserver-v4.20-9608-rtm-2016.04.17-linux-x64-64bit.tar?raw=true"
 
 remote_file "#{Chef::Config[:file_cache_path]}/softether-vpnserver-v4.20-9608-rtm-2016.04.17-linux-x64-64bit.tar" do
     source download_url
