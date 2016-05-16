@@ -11,8 +11,8 @@ include_recipe      'apt'
 include_recipe      'build-essential'
 
 # install all the dependencies
-#%w{curl,gcc,binutils,tar,gzip,glibc,zlib,openssl,readline,ncurses,pthread}.each do |pkg|
-#    package pkg do
-#        action  :upgrade
-#    end
-#end
+%w{curl,gcc,binutils,tar,gzip,glibc,zlib,openssl,readline,ncurses,pthread}.each do |pkg|
+    package pkg do
+        action  :update
+    end
+end
