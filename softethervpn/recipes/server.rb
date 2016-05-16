@@ -8,7 +8,7 @@
 #
 # All rights reserved - Do Not Redistribute
 #
-include_recipe      'apt'
+include_recipe      'yum'
 include_recipe      'build-essential'
 include_recipe      'curl'
 

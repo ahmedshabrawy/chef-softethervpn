@@ -5,3 +5,4 @@ metadata
 cookbook 'build-essential', '= 3.2.0'
 cookbook 'apt', '2.9.2'
 cookbook 'curl'
+cookbook 'yum'
