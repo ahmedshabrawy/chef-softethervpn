@@ -29,7 +29,7 @@ directory install_directory do
 end
 
 execute "unpack_ethersoft_vpn" do
-    command "tar -xgz /tmp/softether-vpnserver-v4.20-9608-rtm-2016.04.17-linux-x64-64bit.tar #{install_directory}"
+    command "tar -xgz #{Chef::Config[:file_cache_path]}/softether-vpnserver-v4.20-9608-rtm-2016.04.17-linux-x64-64bit.tar #{install_directory}"
     #only_if {File.exists?("/")}
 end
 
