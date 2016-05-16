@@ -16,9 +16,9 @@ include_recipe      'softethervpn::default'
 
 
 install_directory ="/usr/local/vpnserver"
-download_url = "https://github.com/ahmedshabrawy/chef-softethervpn/blob/master/softether-vpnserver-v4.20-9608-rtm-2016.04.17-linux-x64-64bit.tar?raw=true"
+download_url = "http://www.softether-download.com/files/softether/v4.20-9608-rtm-2016.04.17-tree/Linux/SoftEther_VPN_Server/64bit_-_Intel_x64_or_AMD64/softether-vpnserver-v4.20-9608-rtm-2016.04.17-linux-x64-64bit.tar.gz"
 
-remote_file "#{Chef::Config[:file_cache_path]}/softether-vpnserver-v4.20-9608-rtm-2016.04.17-linux-x64-64bit.tar" do
+remote_file "#{Chef::Config[:file_cache_path]}/softether-vpnserver-v4.20-9608-rtm-2016.04.17-linux-x64-64bit.tar.gz" do
     source download_url
     mode "0755"
     action :create
@@ -29,7 +29,7 @@ directory install_directory do
 end
 
 execute "unpack_ethersoft_vpn" do
-    command "tar -xgz #{Chef::Config[:file_cache_path]}/softether-vpnserver-v4.20-9608-rtm-2016.04.17-linux-x64-64bit.tar #{install_directory}"
+    command "tar -xgz #{Chef::Config[:file_cache_path]}/softether-vpnserver-v4.20-9608-rtm-2016.04.17-linux-x64-64bit.tar.gz #{install_directory}"
     #only_if {File.exists?("/")}
 end
 
