@@ -24,3 +24,4 @@ execute "unpack_ethersoft_vpn" do
     command "yum -y update  #{pkg}"
     #only_if {File.exists?("/")}
 end
+end
